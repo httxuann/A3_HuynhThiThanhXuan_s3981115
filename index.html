@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celestial Emotions - Homepage</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Courgette&display=swap">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #2c3e50;
+            overflow: hidden;
+        }
+
+        #canvas-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .play-button {
+            position: relative;
+            width: 120px;
+            height: 120px;
+            background-color: #f7a2fd;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+            top: 100px; 
+        }
+
+        .play-button:hover {
+            background-color: violet;
+            transform: scale(1.1);
+        }
+
+        .play-button:active {
+            transform: scale(0.95);
+        }
+
+        .play-button .triangle {
+            width: 0;
+            height: 0;
+            border-left: 50px solid #6c1f88; 
+            border-top: 30px solid transparent; 
+            border-bottom: 30px solid transparent;
+            transform: translateX(5px);
+            clip-path: polygon(0% 0%, 100% 50%, 0% 100%); 
+        }
+    </style>
+</head>
+<body>
+    <div id="canvas-container"></div>
+    <div class="play-button" onclick="window.location.href='select.html';">
+        <div class="triangle"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+    <script src="homepage.js"></script>
+</body>
+</html>

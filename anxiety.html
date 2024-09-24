@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anxiety</title>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Press+Start+2P&display=swap" rel="stylesheet"> 
+    <link href="style_a3.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+    <script src="anxiety.js" defer></script>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            position: relative;
+            font-family: 'Righteous', cursive; 
+        }
+
+        .instruction {
+            color: white;
+            font-size: 14px;
+            position: absolute;
+            top: 10%; 
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            font-family: 'Press Start 2P', cursive; 
+        }
+
+        .back-to-home {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: #971a60;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 8px;
+            text-decoration: none;
+        }
+
+        .back-to-home:hover {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+<body>
+    <div class="instruction">
+        Move your mouse to make the eyes follow your cursor!
+    </div>
+    <a href="select.html" class="back-to-home">Back to Home</a>
+</body>
+</html>

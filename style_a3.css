@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black; 
+    overflow: hidden; 
+}
+
+#canvas-container {
+    position: relative;
+}
+
+.play-button {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    background-color: #f7a2fd;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    top: 50px; 
+}
+
+
